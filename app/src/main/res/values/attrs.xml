@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PlayerTextView">
+        <attr name="ptvName" format="string" />
+        <attr name="ptvShouldVisibleBorder" format="boolean" />
+        <attr name="ptvBorderColor" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MarkChooserButton">
+        <attr name="mcbMarkType" format="enum" >
+            <enum name="CROSS" value="0"/>
+            <enum name="NOUGHT" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="dialog_ok">Начать</string>
+    <string name="dialog_close">Завершить</string>
+    <string name="hint_player_x">Крестики</string>
+    <string name="hint_player_o">Нолики</string>
+    <string name="dialog_winner_title">Игрок %s победил! Начать заново?</string>
+    <string name="dialog_draw_title">Ничья!</string>
+
+    <string name="main_no_name_description">Игрок без имени</string>
+
+    <string name="common_host">Ведущий</string>
+    <string name="common_guest">Гость</string>
+    <string name="common_error_bluetooth_is_disabled">Для старта игры вам необходимо включить Bluetooth.</string>
+    <string name="common_error">В приложении произошла ошибка: %s</string>
+    <string name="common_empty_placeholder">-</string>
+
+    <string name="welcome_fragment_title">Добро пожаловать!</string>
+    <string name="welcome_fragment_next">Продолжить</string>
+    <string name="welcome_fragment_description">Для старта игры вам необходимо включить Bluetooth и осуществить сопряжение с устройством противника.</string>
+
+    <string name="chooser_fragment_title">На какой вы стороне?</string>
+    <string name="chooser_fragment_description">Один из вас должен быть ведущим игры, а другой - гостем. Пожалуйста, выберите один вариант (вы не должны выбирать тот же вариант).</string>
+    <string name="chooser_fragment_error_connect_failed">Не удалось создать соединение. Проверьте настройки Bluetooth.</string>
+
+    <string name="lobby_fragment_host_description">Ожидаем запроса на соединение с гостем.</string>
+    <string name="lobby_fragment_guest_description">Отправляем запрос на соединение с ведущим.</string>
+    <string name="lobby_fragment_error_timeout">Гость не подключился в установленное время.</string>
+    <string name="lobby_fragment_error_connect_failed">Не удалось установить соединение. Проверьте настройки Bluetooth.</string>
+
+    <string name="paired_devices_fragment_empty_placeholder_title">Сопряженные устройства не найдены</string>
+    <string name="paired_devices_fragment_empty_placeholder_description">Для старта игры вам необходимо осуществить сопряжение с устройством противника.</string>
+
+</resources>

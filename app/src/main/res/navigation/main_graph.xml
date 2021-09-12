@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/chooserFragment"
+        android:name="io.github.kaczmarek.tictactoe.ui.chooser.ChooserFragment"
+        android:label="ChooserFragment" >
+        <action
+            android:id="@+id/action_chooserFragment_to_lobbyFragment"
+            app:destination="@id/lobbyFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/chooserFragment"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_chooserFragment_to_pairedDevicesFragment"
+            app:destination="@id/pairedDevicesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/chooserFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="io.github.kaczmarek.tictactoe.ui.game.GameFragment"
+        android:label="GameFragment" />
+    <fragment
+        android:id="@+id/lobbyFragment"
+        android:name="io.github.kaczmarek.tictactoe.ui.lobby.LobbyFragment"
+        android:label="LobbyFragment" >
+        <action
+            android:id="@+id/action_lobbyFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/chooserFragment" />
+        <argument
+            android:name="playerType"
+            app:argType="io.github.kaczmarek.tictactoe.ui.model.PlayerType"
+            android:defaultValue="HOST" />
+    </fragment>
+    <fragment
+        android:id="@+id/pairedDevicesFragment"
+        android:name="io.github.kaczmarek.tictactoe.ui.paireddevices.PairedDevicesFragment"
+        android:label="PairedDevicesFragment" >
+        <action
+            android:id="@+id/action_pairedDevicesFragment_to_lobbyFragment"
+            app:destination="@id/lobbyFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/pairedDevicesFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="io.github.kaczmarek.tictactoe.ui.welcome.WelcomeFragment"
+        android:label="WelcomeFragment" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_chooserFragment"
+            app:destination="@id/chooserFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>

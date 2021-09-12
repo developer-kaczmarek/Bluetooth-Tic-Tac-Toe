@@ -1,0 +1,41 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/white_fff</item>
+        <item name="colorPrimaryDark">@color/white_fff</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white_fff</item>
+        <item name="android:navigationBarColor">@color/white_fff</item>
+    </style>
+
+    <style name="TitleTheme">
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/black_000</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/nunito_black</item>
+    </style>
+
+    <style name="SubtitleTheme">
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/black_000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/nunito_black</item>
+    </style>
+
+    <style name="DescriptionTheme">
+        <item name="android:lineSpacingExtra">8sp</item>
+        <item name="android:textColor">@color/black_000</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+    </style>
+
+    <style name="Cell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/white_fff</item>
+    </style>
+
+</resources>
